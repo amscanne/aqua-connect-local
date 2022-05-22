@@ -1,4 +1,4 @@
-# Home Assistant configuration for the Aqua Connect Local Gateway
+# Home Assistant configuration for Aqua Connect Local
 
 Note that my local gateway has an address of `192.168.3.90`, you'll need to replace that below. I am not sure to the extent the rest of the `KeyId`s are all standardized, etc.
 
