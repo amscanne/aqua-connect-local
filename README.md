@@ -1,5 +1,7 @@
 # Home Assistant configuration for interacting with the Aqua Connect Local Gateway
 
+Note that my local gateway has an address of `192.168.3.90`, you'll need to replace that below.
+
 ```yaml
 sensor:
   - platform: rest
