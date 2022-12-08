@@ -23,14 +23,14 @@ sensor:
           {% set panel = states('sensor.pool_panel') %}
           {% if panel is search('(Pool|Spa) Temp') %} {{ panel | regex_findall_index(' Temp +(\d+)') }} {% else %} {{ states('sensor.pool_temperature') }} {% endif %}
         device_class: temperature
-        unit_of_measurement: "F"
+        unit_of_measurement: "°F"
       air_temperature:
         friendly_name: "Air temperature"
         value_template: >-
           {% set panel = states('sensor.pool_panel') %}
           {% if panel is search('Air Temp') %} {{ panel | regex_findall_index('Air Temp +(\d+)') }} {% else %} {{ states('sensor.air_temperature') }} {% endif %}
         device_class: temperature
-        unit_of_measurement: "F"
+        unit_of_measurement: "°F"
 switch:
   - platform: template
     switches:
